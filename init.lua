@@ -1,0 +1,5 @@
+require("theme")
+require("lsp")
+require("tools")
+require("options")
+require("treesitter")
