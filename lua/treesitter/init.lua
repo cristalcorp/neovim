@@ -3,6 +3,6 @@ vim.pack.add {
 }
 
 require('nvim-treesitter').setup {
-    ensure_installed = { 'python', 'rust', 'go', 'lua', 'vim', 'vimdoc' },
+    ensure_installed = { 'python', 'rust', 'go', 'lua', 'vim', 'vimdoc', 'markdown', 'markdown_inline' },
     highlight = { enable = true },
 }
