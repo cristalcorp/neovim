@@ -1,22 +1,18 @@
-local lspconfig = require('lspconfig')
-
 -- Basedpyright
-lspconfig.basedpyright.setup({
+vim.lsp.config('basedpyright', {
   settings = {
     basedpyright = {
       analysis = {
-        typeCheckingMode = "standard", -- off / basic / standard / strict / all
+        typeCheckingMode = "standard",
       }
     }
   }
 })
+vim.lsp.enable('basedpyright')
 
--- Ruff (linting + formatting)
-lspconfig.ruff.setup({})
-
-vim.api.nvim_create_autocmd("BufWritePre", {
-  pattern = "*.py",
-  callback = function()
-    vim.lsp.buf.format({ name = "ruff" })
-  end,
+-- Ruff
+vim.lsp.config('ruff', {
+  cmd = { 'ruff', 'server' },
+  filetypes = { 'python' },
 })
+vim.lsp.enable('ruff')
