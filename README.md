@@ -23,3 +23,7 @@ cargo install rustanalyzer
 ```bash
 npm install -g vscode-langservers-extracted
 ```
+## Markdown
+```bash
+yay -S marksman
+```

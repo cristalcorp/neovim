@@ -29,3 +29,17 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     end
   end,
 })
+
+-- Options i am not sure to keep
+-- vim.opt.colorcolumn = '80'
+-- vim.opt.textwidth = 80
+
+-- disable mouse popup yet keep mouse enabled
+-- vim.cmd [[
+--  aunmenu PopUp
+--   autocmd! nvim.popupmenu
+--]]
+
+-- Only highlight with treesitter
+--vim.cmd('syntax off')
+
