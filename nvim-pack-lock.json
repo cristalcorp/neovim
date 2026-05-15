@@ -4,6 +4,10 @@
       "rev": "dca1a190aa85f9065979ef35802fb77131911106",
       "src": "https://github.com/stevearc/conform.nvim"
     },
+    "fzf-lua": {
+      "rev": "311a630292310ea3bfe46dd616e17f283e975801",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
     "gruvbox.nvim": {
       "rev": "154eb5ff5b96d0641307113fa385eaf0d36d9796",
       "src": "https://github.com/ellisonleao/gruvbox.nvim"

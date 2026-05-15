@@ -11,4 +11,8 @@ keymap("n", "<C-k>", "<C-w>k", { desc = "Déplace le curseur dans la fenêtre du
 keymap("n", "<C-l>", "<C-w>l", { desc = "Déplace le curseur dans la fenêtre droite" })
 
 -- Format shortcut
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
+keymap("n", "<leader>F", vim.lsp.buf.format, { desc = "Format if LSP is present"})
+
+-- Undotree toggle
+keymap("n", "<leader>U", ":Undotree<CR>", { desc = "Toggle Undotree" })
+
