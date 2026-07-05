@@ -5,7 +5,7 @@ vim.pack.add{
 require('fzf-lua').setup {}
 
 local keymap = vim.keymap.set
-keymap("n", "<leader>ff",":FzfLua files<CR>",      { desc = "Find files" })
+keymap("n", "<leader>ff", ":FzfLua files<CR>",      { desc = "Find files" })
 keymap("n", "<leader>fg", ":FzfLua live_grep<CR>",  { desc = "Live grep" })
 keymap("n", "<leader>fb", ":FzfLua buffers<CR>",    { desc = "Buffers" })
 keymap("n", "<leader>fk", ":FzfLua keymaps<CR>",    { desc = "Keymaps" })

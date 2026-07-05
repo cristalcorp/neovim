@@ -1,5 +1,5 @@
-require("theme")
-require("lsp")
 require("tools")
 require("options")
+require("theme")
+require("lsp")
 require("treesitter")

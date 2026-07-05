@@ -46,7 +46,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 -- ── rust-analyzer (vim.lsp.config — API native 0.12) ─────────
 -- Prérequis : rustup component add rust-analyzer
 vim.lsp.config('rust_analyzer', {
-    cmd          = { 'rust-analyzer' },
+    -- cmd          = { 'rust-analyzer' },
+    cmd = { vim.fn.expand('~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer') },
     filetypes    = { 'rust' },
     root_markers = { 'Cargo.toml', 'Cargo.lock', '.git' },
     settings = {
